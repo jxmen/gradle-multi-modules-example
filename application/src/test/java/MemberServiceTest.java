@@ -16,8 +16,14 @@ class MemberServiceTest {
     }
 
     @Test
-    void createMemberTest() {
+    void createMemberWithStringTest() {
         Member savedMember = memberService.createMember("memberName");
+        assertThat(savedMember.getName()).isEqualTo("memberName");
+    }
+
+    @Test
+    void createMemberWithMembmerTest() {
+        Member savedMember = memberService.createMember(new Member( "memberName" ));
         assertThat(savedMember.getName()).isEqualTo("memberName");
     }
 

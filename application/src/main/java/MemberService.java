@@ -8,13 +8,16 @@ public class MemberService {
     }
 
     public Member createMember(String memberName) {
-        Member member = new Member(memberName);
-        Member savedMember = memberRepository.save(member);
-
-        return savedMember;
+        return createMember(new Member(memberName));
     }
 
     public List<Member> getAllMembers() {
         return memberRepository.findAll();
+    }
+
+    public Member createMember(Member member) {
+        Member savedMember = memberRepository.save(member);
+
+        return savedMember;
     }
 }
