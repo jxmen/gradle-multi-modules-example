@@ -1,2 +1,4 @@
 rootProject.name = 'gradle-multi-modules-example'
 
+include 'application'
+include 'library'
