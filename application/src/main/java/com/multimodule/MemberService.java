@@ -1,3 +1,5 @@
+package com.multimodule;
+
 import java.util.List;
 
 public class MemberService {

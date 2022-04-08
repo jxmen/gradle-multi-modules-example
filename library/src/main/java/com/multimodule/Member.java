@@ -1,3 +1,5 @@
+package com.multimodule;
+
 public class Member {
     private final String name;
 

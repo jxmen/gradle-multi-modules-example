@@ -1,3 +1,5 @@
+package com.multimodule;
+
 public class ApplicationMain {
     public static void main(String[] args) {
         MemberService memberService = new MemberService(new InMemoryMemberRepository());

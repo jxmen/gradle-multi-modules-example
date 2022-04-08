@@ -1,3 +1,7 @@
+package com.multimodule;
+
+import com.multimodule.InMemoryMemberRepository;
+import com.multimodule.Member;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

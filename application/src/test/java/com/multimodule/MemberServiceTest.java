@@ -1,3 +1,5 @@
+package com.multimodule;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -23,7 +25,7 @@ class MemberServiceTest {
 
     @Test
     void createMemberWithMembmerTest() {
-        Member savedMember = memberService.createMember(new Member( "memberName" ));
+        Member savedMember = memberService.createMember(new Member("memberName"));
         assertThat(savedMember.getName()).isEqualTo("memberName");
     }
 

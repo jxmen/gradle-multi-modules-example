@@ -1,3 +1,5 @@
+package com.multimodule;
+
 import java.util.ArrayList;
 import java.util.List;
 
